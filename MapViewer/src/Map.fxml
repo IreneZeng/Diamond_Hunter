@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MapController">
+   <children>
+      <BorderPane fx:id="bp" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Set">
+                  <items>
+                    <MenuItem fx:id="mAxe" mnemonicParsing="false" onAction="#onSetAxe" text="Axe" />
+                  </items>
+                  <items>
+                    <MenuItem fx:id="mBoat" mnemonicParsing="false" onAction="#onSetBoat" text="Boat" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                	<items>
+                    <MenuItem fx:id="mTips" mnemonicParsing="false" onAction="#onClickTips" text="Tips" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top></BorderPane>
+   </children>
+</AnchorPane>
